@@ -1,5 +1,1 @@
-const btn = document.getElementById("btn");
-
-btn.addEventListener("click", function () {
-    alert("JavaScript works!");
-});
+console.log("CloudBudget website");
