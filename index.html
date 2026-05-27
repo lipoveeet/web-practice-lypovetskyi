@@ -1,209 +1,456 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>CloudBudget</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
 
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
+
 <body>
 
-<header class="main-header">
+    <!-- HEADER -->
 
-    <div class="navbar content-wrap d-flex">
+    <header class="main-header">
 
-        <nav class="d-flex">
+        <div class="content-wrap">
 
-            <div class="logo d-flex">
+            <div class="navbar d-flex">
 
-                <i class="fa-solid fa-cloud"></i>
+                <!-- LOGO -->
 
-                <span>CloudBudget</span>
+                <a href="#" class="logo d-flex">
 
-            </div>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
 
-            <div class="menu-icon">
+                        <path
+                            d="M7 18C4.79086 18 3 16.2091 3 14C3 11.7909 4.79086 10 7 10C7.17631 10 7.34995 10.0114 7.52026 10.0336C8.3892 7.11512 11.0912 5 14.2857 5C18.1651 5 21.2857 8.12056 21.2857 12C21.2857 15.8794 18.1651 19 14.2857 19H7V18Z"
+                            fill="white" />
 
-                <div class="menu-icon-open">
+                    </svg>
+
+                    <span>CloudBudget</span>
+
+                </a>
+
+                <!-- NAVIGATION -->
+
+                <nav class="navigation">
+
+                    <ul class="main-menu d-flex">
+
+                        <li><a href="#">OVERVIEW</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#features">FEATURES</a></li>
+                        <li><a href="#technology">TECHNOLOGY</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+
+                    </ul>
+
+                </nav>
+
+                <!-- BUTTON -->
+
+                <button class="header-btn">
+
+                    LOGIN
+
+                </button>
+
+                <!-- BURGER -->
+
+                <div class="burger">
+
                     <i class="fa-solid fa-bars"></i>
+
                 </div>
-
-                <div class="menu-icon-close">
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-
-            </div>
-
-            <ul class="main-menu d-flex">
-
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Technology</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Sign up</a></li>
-
-            </ul>
-
-        </nav>
-
-    </div>
-
-</header>
-
-<section class="hero">
-
-    <div class="hero-content">
-
-        <h1>CLOUDBUDGET</h1>
-
-        <p>
-            Cloud budget management for everyone.
-            Only €69.95 a Month After a 7 Day Trial of Up to €4.99
-        </p>
-
-        <button class="signup-btn">
-            SIGN UP
-        </button>
-
-    </div>
-
-</section>
-
-<section class="features">
-
-    <div class="content-wrap">
-
-        <h2 class="section-title">
-            Features
-        </h2>
-
-        <div class="features-wrapper">
-
-            <div class="feature-card">
-
-                <h3>Supports All Currencies</h3>
-
-                <p>
-                    We support all popular currencies and is fully customizable.
-                </p>
-
-            </div>
-
-            <div class="feature-card">
-
-                <h3>Manage your expenses</h3>
-
-                <p>
-                    Easily manage your daily expenses and financial goals.
-                </p>
-
-            </div>
-
-            <div class="feature-card">
-
-                <h3>Cloud Budget Management</h3>
-
-                <p>
-                    Save your data safely in cloud storage.
-                </p>
 
             </div>
 
         </div>
 
+    </header>
+
+    <!-- MOBILE MENU -->
+
+    <div class="mobile-menu">
+
+        <div class="mobile-menu-close">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </div>
+
+        <ul>
+
+            <li><a href="#">OVERVIEW</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#features">FEATURES</a></li>
+            <li><a href="#technology">TECHNOLOGY</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+
+        </ul>
+
     </div>
 
-</section>
+    <!-- HERO -->
 
-<section class="technology">
+    <section class="hero">
 
-    <div class="content-wrap">
+        <div class="hero-overlay"></div>
 
-        <h2 class="section-title">
-            Technology
-        </h2>
+        <div class="content-wrap">
 
-        <div class="technology-wrapper">
+            <div class="hero-content">
 
-            <div class="tech-card">
-
-                <h3>Cloud Storage</h3>
+                <h1>CLOUDBUDGET</h1>
 
                 <p>
-                    Access your budget anywhere anytime.
+                    Cloud budget management for everyone.
+                    Only €69.95 a Month After a 7 Day Trial of Up to €4.99
                 </p>
 
-            </div>
+                <button class="hero-btn">
 
-            <div class="tech-card">
+                    SIGN UP
 
-                <h3>Secure Data</h3>
-
-                <p>
-                    Your information is securely protected.
-                </p>
-
-            </div>
-
-            <div class="tech-card">
-
-                <h3>Modern Design</h3>
-
-                <p>
-                    Responsive and modern UI design.
-                </p>
+                </button>
 
             </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
+    <!-- ABOUT -->
 
-<section class="contact">
+    <section class="about" id="about">
 
-    <div class="content-wrap">
+        <div class="content-wrap">
 
-        <h2 class="section-title">
-            Contact
-        </h2>
+            <div class="about-wrapper">
 
-        <form class="contact-form">
+                <div class="about-content">
 
-            <input type="text" placeholder="Your Name">
+                    <h2>Easy to Use Cloud Budget Management</h2>
 
-            <input type="email" placeholder="Your Email">
+                    <p>
+                        Our software helps people manage finances,
+                        control expenses and improve productivity
+                        with modern cloud technologies.
+                    </p>
 
-            <textarea placeholder="Your Message"></textarea>
+                    <button>
 
-            <button type="submit">
-                Send Message
-            </button>
+                        Learn More
 
-        </form>
+                    </button>
 
-    </div>
+                </div>
 
-</section>
+                <div class="about-image">
 
-<footer class="footer">
+                    <i class="fa-solid fa-chart-pie"></i>
 
-    <div class="content-wrap">
+                </div>
 
-        <p>
-            © CloudBudget 2026
-        </p>
+            </div>
 
-    </div>
+        </div>
 
-</footer>
+    </section>
 
-<script src="assets/js/main.js"></script>
+    <!-- FEATURES -->
+
+    <section class="features" id="features">
+
+        <div class="content-wrap">
+
+            <div class="section-heading">
+
+                <h2>Features</h2>
+
+                <p>
+                    Powerful features for your business and personal finance.
+                </p>
+
+            </div>
+
+            <div class="features-wrapper">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-wallet"></i>
+
+                    </div>
+
+                    <h3>Manage Expenses</h3>
+
+                    <p>
+                        Easily control your finances and daily transactions.
+                    </p>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-cloud"></i>
+
+                    </div>
+
+                    <h3>Cloud Storage</h3>
+
+                    <p>
+                        Save your budget securely in the cloud anytime.
+                    </p>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                    </div>
+
+                    <h3>Secure Data</h3>
+
+                    <p>
+                        Modern technologies protect your information.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TECHNOLOGY -->
+
+    <section class="technology" id="technology">
+
+        <div class="content-wrap">
+
+            <div class="section-heading">
+
+                <h2>Technology</h2>
+
+                <p>
+                    Modern responsive technologies for all devices.
+                </p>
+
+            </div>
+
+            <div class="technology-wrapper">
+
+                <div class="technology-card">
+
+                    <span>01</span>
+
+                    <h3>Responsive Design</h3>
+
+                    <p>
+                        Works perfectly on desktop, tablet and mobile.
+                    </p>
+
+                </div>
+
+                <div class="technology-card">
+
+                    <span>02</span>
+
+                    <h3>Modern UI</h3>
+
+                    <p>
+                        Clean and professional user interface.
+                    </p>
+
+                </div>
+
+                <div class="technology-card">
+
+                    <span>03</span>
+
+                    <h3>Fast Performance</h3>
+
+                    <p>
+                        Optimized website loading speed and structure.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+        <div class="content-wrap">
+
+            <div class="contact-wrapper">
+
+                <div class="contact-info">
+
+                    <h2>Contact</h2>
+
+                    <p>
+                        Questions or concerns? Just fill out the form below
+                        and our support team will contact you.
+                    </p>
+
+                    <div class="contact-details">
+
+                        <div class="contact-item">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <span>Kyiv, Ukraine</span>
+
+                        </div>
+
+                        <div class="contact-item">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <span>+380 99 123 45 67</span>
+
+                        </div>
+
+                        <div class="contact-item">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <span>cloudbudget@gmail.com</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <form class="contact-form">
+
+                    <div class="form-row">
+
+                        <input type="text" placeholder="First Name">
+
+                        <input type="text" placeholder="Last Name">
+
+                    </div>
+
+                    <input type="email" placeholder="Email">
+
+                    <textarea placeholder="Message"></textarea>
+
+                    <button type="submit">
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="content-wrap">
+
+            <div class="footer-wrapper">
+
+                <div class="footer-item">
+
+                    <h3>CloudBudget</h3>
+
+                    <p>
+                        Modern budget management platform for everyone.
+                    </p>
+
+                </div>
+
+                <div class="footer-item">
+
+                    <h3>Links</h3>
+
+                    <ul>
+
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#technology">Technology</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-item">
+
+                    <h3>Social</h3>
+
+                    <div class="socials d-flex">
+
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="copyright">
+
+                © 2026 CloudBudget
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
